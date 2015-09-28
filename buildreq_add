@@ -52,3 +52,4 @@ docutils-python
 Jinja2-python
 markupsafe-python
 linecache2-python
+requests-mock
