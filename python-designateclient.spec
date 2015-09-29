@@ -4,7 +4,7 @@
 #
 Name     : python-designateclient
 Version  : 1.5.0
-Release  : 12
+Release  : 13
 URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-1.5.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-1.5.0.tar.gz
 Summary  : OpenStack DNS as a Service - Client
