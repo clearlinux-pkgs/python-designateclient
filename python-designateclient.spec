@@ -4,7 +4,7 @@
 #
 Name     : python-designateclient
 Version  : 2.0.0
-Release  : 14
+Release  : 15
 URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.0.0.tar.gz
 Summary  : OpenStack DNS as a Service - Client
