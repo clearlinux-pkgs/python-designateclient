@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Add filtering to recordsets CLI
+* Show "status" and "action" for recordsets
+* Move all V2 Controllers to inherit from the v2
+* Fixes 'openstack tld list' command's exception
+* Updated from global requirements
+* Update .gitreview for stable/mitaka
+
 2.0.0
 -----
 
