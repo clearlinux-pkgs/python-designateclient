@@ -1,15 +1,74 @@
 CHANGES
 =======
 
-2.1.0
+2.3.0
 -----
 
+* Updated from global requirements
+* Resolve FloatingIP PTR records clis argument's description
+* Docs update for FloatingIP's ptr records
+* Fix clis related to FloatingIP's ptr records
+* Updated from global requirements
+* Remove discover from test-requirements
+* Updated from global requirements
+* Updated from global requirements
+
+2.2.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* Use osc_lib instead of cliff
+* Updated from global requirements
+* Add quota set / list / reset commands
+* Mark the v1 API Client as deprecated
+* Add global flags to cli
+* Updated from global requirements
+* Use osc-lib instead of openstackclient
+* Revert "Add Global Flags for filtering results"
+* Updated from global requirements
+* Add pool listing to python designate client
+* Add `openstack zone transfer accept list` cli to designateclient
+* Allow cli to query "v2/recordsets"
+* Updated from global requirements
+* Add Global Flags for filtering results
+* Updated from global requirements
+* Use the correct capitalization of OpenStack
+* Updated from global requirements
+* Update the home-page with developer documentation
+* Add reno support for release notes
+* Switch to keystoneauth
+* Added CONTRIBUTING.rst file
+* Docs Update
+* Updated from global requirements
+* Don't use the 'keystone' client (functional tests)
+* Update doc examples to use keystoneauth
+* Update designate cli page with more examples Closes-Bug: #1578207
+* Add python-openstackclient to test-requirements
+* Improve python-designateclient docs
+* Updated from global requirements
+* Add support for service status
+* Fix a race condition in one of the zone import tests
+* Run the functional tests in a more verbose mode
+* Show responses on zone and recordset deletes
+* Implement zone import
+* Doc changes for installation webpage
+* Fix an issue causing a blacklist test to fail
 * Add filtering to recordsets CLI
 * Show "status" and "action" for recordsets
 * Move all V2 Controllers to inherit from the v2
 * Fixes 'openstack tld list' command's exception
+* Implement zone export
 * Updated from global requirements
-* Update .gitreview for stable/mitaka
+* Improved TestRecordsetNegative
+* Add a service catalog override to the functional tests
+* Updated from global requirements
+* Stop using non-existent method of Mock
+* Log stacktraces of MultipleExceptions in functionaltests
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Python3: Add support for urlparse
 
 2.0.0
 -----
