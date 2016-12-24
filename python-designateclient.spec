@@ -4,7 +4,7 @@
 #
 Name     : python-designateclient
 Version  : 2.3.0
-Release  : 23
+Release  : 24
 URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.3.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.3.0.tar.gz
 Summary  : OpenStack DNS-as-a-Service - Client
@@ -29,6 +29,7 @@ BuildRequires : fixtures-python
 BuildRequires : flake8-python
 BuildRequires : hacking-python
 BuildRequires : idna-python
+BuildRequires : imagesize-python
 BuildRequires : ipaddress-python
 BuildRequires : iso8601
 BuildRequires : jsonpatch
