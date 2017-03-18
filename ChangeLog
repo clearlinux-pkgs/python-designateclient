@@ -1,6 +1,50 @@
 CHANGES
 =======
 
+2.6.0
+-----
+
+* Add attribute support to create zone cli
+* Show proper error on over quota commands
+* Fix broken link for modindex
+
+2.5.0
+-----
+
+* Updated from global requirements
+* Add Python 3.5 classifier and venv
+* Updated from global requirements
+* Remove 'coding: utf-8' from  license statement
+* Removes unnecessary utf-8 encoding
+* Add Constraints support
+* Updated from global requirements
+
+2.4.0
+-----
+
+* Ensure X-Designate-Edit-Managed-Records header value is a string
+* Updated from global requirements
+* Show team and repo badges on README
+* Use tempest instead of Tempest-lib
+* Replace 'assertFalse(a in b)' with 'assertNotIn(a, b)'
+* Updated from global requirements
+* Updated from global requirements
+* Ensure X-Auth-All-Projects header value is a string
+* Updated from global requirements
+* Add plug-in summary for osc doc
+* Updated from global requirements
+* Updated from global requirements
+* Fix for bug 1627945
+* Enable release notes translation
+* Changed the author and author-email value
+* Replace 'assertTrue(a in b)' with 'assertIn(a, b)'
+* Updated from global requirements
+* Add oslo.config to test-requirements
+* Updated from global requirements
+* Fix pep8 E501 line too long
+* record-create/update: Account for priority being 0
+* Update reno for stable/newton
+
 2.3.0
 -----
 
