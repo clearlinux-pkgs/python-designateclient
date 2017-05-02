@@ -6,7 +6,7 @@
 #
 Name     : python-designateclient
 Version  : 2.6.0
-Release  : 25
+Release  : 26
 URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.6.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.6.0.tar.gz.asc
