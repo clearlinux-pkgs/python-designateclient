@@ -1,6 +1,61 @@
 CHANGES
 =======
 
+2.9.0
+-----
+
+* Updated from global requirements
+* Partial Revert "Remove unneeded requirements file"
+* Updated from global requirements
+
+2.8.0
+-----
+
+* Updated from global requirements
+* Split doc requirements into their own file
+* Remove unneeded requirements file
+* Improve recordset create UI
+* Avoid tox\_install.sh for constraints support
+* Use jobs from designate repo
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Make remote error handling more robust
+* Updated from global requirements
+* Update the documentation link for doc migration
+* Update reno for stable/pike
+* Updated from global requirements
+* Update and optimize documentation links
+
+2.7.0
+-----
+
+* Updated from global requirements
+* switch from oslosphinx to openstackdocstheme
+* import cli-reference material from openstack-manuals
+* rearrange the existing docs into the new standard layout
+* use setuptools to build the docs even for testing
+* Update cli docs
+* Add tsig key support to python-designateclient
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* tox: Whitelist rm
+* doc: Remove cruft from conf.py
+* Use Sphinx 1.5 warning-is-error
+* Explicitly set 'builders' option
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Updated from global requirements
+* Simplify OSC doc structure
+* Updated from global requirements
+* Set client module \_\_version\_\_
+* Update reno for stable/ocata
+
 2.6.0
 -----
 
@@ -62,7 +117,7 @@ CHANGES
 
 * Updated from global requirements
 * Updated from global requirements
-* Use osc_lib instead of cliff
+* Use osc\_lib instead of cliff
 * Updated from global requirements
 * Add quota set / list / reset commands
 * Mark the v1 API Client as deprecated
@@ -72,7 +127,7 @@ CHANGES
 * Revert "Add Global Flags for filtering results"
 * Updated from global requirements
 * Add pool listing to python designate client
-* Add `openstack zone transfer accept list` cli to designateclient
+* Add \`openstack zone transfer accept list\` cli to designateclient
 * Allow cli to query "v2/recordsets"
 * Updated from global requirements
 * Add Global Flags for filtering results
@@ -127,7 +182,7 @@ CHANGES
 * Updated from global requirements
 * Updated from global requirements
 * Put py34 first in the env order of tox
-* Replace assertEqual(None, *) with assertIsNone in tests
+* Replace assertEqual(None, \*) with assertIsNone in tests
 * Add a missing whitespace
 * Deprecated tox -downloadcache option removed
 * Indicate py34 support
@@ -137,8 +192,8 @@ CHANGES
 * Updated from global requirements
 * Updated from global requirements
 * Improve logging in designateclient
-* Support OS_INTERFACE and set V2 API as default
-* Pass OS_ENDPOINT_TYPE from shell to client
+* Support OS\_INTERFACE and set V2 API as default
+* Pass OS\_ENDPOINT\_TYPE from shell to client
 * Updated from global requirements
 * Adds changes related to py3 compatibility
 * Clearing out .pyc file before a tox run
@@ -196,7 +251,7 @@ CHANGES
 * Convert byte to str for py3 compatibilty
 * Updated from global requirements
 * Updated from global requirements
-* Add some missing Unit Tests to test_utils.py
+* Add some missing Unit Tests to test\_utils.py
 * Solve some py3 compatibilty issues
 * Fix py3 compatibilty issues
 * Updated from global requirements
@@ -211,9 +266,9 @@ CHANGES
 -----
 
 * Updated from global requirements
-* Fix backwards compat for edit_managed/all_tenants
+* Fix backwards compat for edit\_managed/all\_tenants
 * Add .eggs to gitignore
-* Add backwards compat for edit_managed/all_tenants
+* Add backwards compat for edit\_managed/all\_tenants
 * Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
@@ -221,7 +276,7 @@ CHANGES
 * Sync tox.ini and add py34
 * Use oslosphinx from PyPi
 * Drop incubating theme from docs
-* Move all_tenants and edit_managed attributes to designate Client
+* Move all\_tenants and edit\_managed attributes to designate Client
 * Log a more informative error upon EndpointNotFound
 * Updated from global requirements
 * V2 Bindings
@@ -250,7 +305,7 @@ CHANGES
 * Move some useful code outside v1
 * Make token + endpoints work correctly
 * Move session creation up to shell
-* Set defaults for endpoint_type and service_type
+* Set defaults for endpoint\_type and service\_type
 * Updated from global requirements
 * Use keystone sessions for v1 client
 * Fixes homepage in metadata and internal docs
@@ -276,7 +331,7 @@ CHANGES
 * Update hacking package, fix/ignore new style errors
 * Updated from global requirements
 * Update .gitreview for repository move
-* Use six.add_metaclass instead of __metaclass__
+* Use six.add\_metaclass instead of \_\_metaclass\_\_
 * Add dummy tests
 
 1.0.3
@@ -336,7 +391,7 @@ CHANGES
 * Allow auth using a pre-fetched token
 * Update to PBR 0.5.21+
 * doc/requirements.txt should be a proxy
-* Remove comments from *requirements.txt (workaround pbr bug)
+* Remove comments from \*requirements.txt (workaround pbr bug)
 * Sync with openstack/requirements
 * Rename to designate in .gitreview
 * Rename Moniker -> Designate
@@ -358,9 +413,9 @@ CHANGES
 * Add keyring to pip-requires
 * Clean error message display :)
 * Cleanup optional and obsolete CLI params
-* Rename OS_SERVICE_ENDPOINT env var to OS_DNS_ENDPOINT
+* Rename OS\_SERVICE\_ENDPOINT env var to OS\_DNS\_ENDPOINT
 * Sync JSONSchemas
-* Rename OS_SERVICE_TYPE env var to OS_DNS_SERVICE_TYPE
+* Rename OS\_SERVICE\_TYPE env var to OS\_DNS\_SERVICE\_TYPE
 
 0.0.2
 -----
@@ -369,7 +424,7 @@ CHANGES
 * Have tox.ini actually run nosetests
 * Pin to jsonschema less than 1.0
 * Add support for administrative access (via X-Moniker-Sudo-Tenant-ID header)
-* Ensure resources and tools/* are included in sdist
+* Ensure resources and tools/\* are included in sdist
 * Add diagnostics to Python API and CLI
 
 0.0.1
@@ -382,15 +437,15 @@ CHANGES
 * Sync Schemas
 * Add support for supplying custom service type
 * Fixup MANIFEST.in
-* Ensure we supply Oslo Version with the correct `python_package` name
+* Ensure we supply Oslo Version with the correct \`python\_package\` name
 * Sync with oslo a8973c52
-* Ensure `moniker --version` reports the correct version number
+* Ensure \`moniker --version\` reports the correct version number
 * Sync with oslo-incubator ad93e4e3
 
 0.0.1.alpha1
 ------------
 
-* Actually use the *correct* version of requests
+* Actually use the \*correct\* version of requests
 * Depend on and update for requests>1.0 (Matching {keystone,cinder,nova}client)
 * Depend on cliff>=1.2.1
 * Support record priority in the CLI
