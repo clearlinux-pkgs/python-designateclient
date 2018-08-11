@@ -1,6 +1,27 @@
 CHANGES
 =======
 
+2.10.0
+------
+
+* Switch to stestr
+* Fix copy-pasta in quota command descriptions
+* server-get/update show wrong values about 'id' and 'update\_at'
+* Remove PyPI downloads
+* fix tox python3 overrides
+* Trivial: Update pypi url to new url
+* Updated from global requirements
+* add lower-constraints job
+* Updated from global requirements
+* Updated from global requirements
+* Add os-testr in test-requirements.txt
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Highlight V1 API removal
+* Improve the RecordSet Update UI
+* Update reno for stable/queens
+
 2.9.0
 -----
 
