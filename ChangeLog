@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+2.11.0
+------
+
+* Don't quote {posargs} in tox.ini
+* Use templates for cover and lower-constraints
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Update reno for stable/rocky
+
 2.10.0
 ------
 
@@ -11,6 +21,7 @@ CHANGES
 * fix tox python3 overrides
 * Trivial: Update pypi url to new url
 * Updated from global requirements
+* Check item is one of six.string\_types not just str
 * add lower-constraints job
 * Updated from global requirements
 * Updated from global requirements
