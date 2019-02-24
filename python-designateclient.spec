@@ -6,23 +6,21 @@
 #
 Name     : python-designateclient
 Version  : 2.11.0
-Release  : 31
+Release  : 32
 URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.11.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.11.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.11.0.tar.gz.asc
-Summary  : OpenStack DNS-as-a-Service - Client
+Summary  : Python client library for Designate
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-designateclient-bin = %{version}-%{release}
 Requires: python-designateclient-license = %{version}-%{release}
 Requires: python-designateclient-python = %{version}-%{release}
 Requires: python-designateclient-python3 = %{version}-%{release}
-Requires: Sphinx
 Requires: cliff
 Requires: debtcollector
 Requires: jsonschema
 Requires: keystoneauth1
-Requires: openstackdocstheme
 Requires: osc-lib
 Requires: oslo.utils
 Requires: pbr
@@ -33,8 +31,11 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/python-designateclient.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package bin
 Summary: bin components for the python-designateclient package.
@@ -79,7 +80,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541272064
+export SOURCE_DATE_EPOCH=1551030093
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
