@@ -5,15 +5,14 @@
 # Source0 file verified with key 0xFC43F0EE211DFED8 (infra-root@openstack.org)
 #
 Name     : python-designateclient
-Version  : 2.12.0
-Release  : 35
-URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.12.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.12.0.tar.gz
-Source1 : http://tarballs.openstack.org/python-designateclient/python-designateclient-2.12.0.tar.gz.asc
+Version  : 3.0.0
+Release  : 36
+URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.0.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.0.0.tar.gz
+Source1 : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.0.0.tar.gz.asc
 Summary  : Python client library for Designate
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: python-designateclient-bin = %{version}-%{release}
 Requires: python-designateclient-license = %{version}-%{release}
 Requires: python-designateclient-python = %{version}-%{release}
 Requires: python-designateclient-python3 = %{version}-%{release}
@@ -48,15 +47,6 @@ Team and repository tags
 .. image:: https://governance.openstack.org/tc/badges/python-designateclient.svg
 :target: https://governance.openstack.org/tc/reference/tags/index.html
 
-%package bin
-Summary: bin components for the python-designateclient package.
-Group: Binaries
-Requires: python-designateclient-license = %{version}-%{release}
-
-%description bin
-bin components for the python-designateclient package.
-
-
 %package license
 Summary: license components for the python-designateclient package.
 Group: Default
@@ -84,14 +74,14 @@ python3 components for the python-designateclient package.
 
 
 %prep
-%setup -q -n python-designateclient-2.12.0
+%setup -q -n python-designateclient-3.0.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565963544
+export SOURCE_DATE_EPOCH=1568907520
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -113,10 +103,6 @@ echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files bin
-%defattr(-,root,root,-)
-/usr/bin/designate
 
 %files license
 %defattr(0644,root,root,0755)
