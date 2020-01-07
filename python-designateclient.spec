@@ -6,7 +6,7 @@
 #
 Name     : python-designateclient
 Version  : 3.0.0
-Release  : 37
+Release  : 38
 URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.0.0.tar.gz
 Source1 : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.0.0.tar.gz.asc
