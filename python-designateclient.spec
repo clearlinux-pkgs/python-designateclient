@@ -5,12 +5,12 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : python-designateclient
-Version  : 3.1.0
-Release  : 41
-URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.1.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.1.0.tar.gz
-Source1  : http://tarballs.openstack.org/python-designateclient/python-designateclient-3.1.0.tar.gz.asc
-Summary  : OpenStack DNS-as-a-Service - Client
+Version  : 4.0.0
+Release  : 42
+URL      : http://tarballs.openstack.org/python-designateclient/python-designateclient-4.0.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-designateclient/python-designateclient-4.0.0.tar.gz
+Source1  : http://tarballs.openstack.org/python-designateclient/python-designateclient-4.0.0.tar.gz.asc
+Summary  : Python client library for Designate
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-designateclient-license = %{version}-%{release}
@@ -41,8 +41,11 @@ BuildRequires : six
 BuildRequires : stevedore
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/python-designateclient.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the python-designateclient package.
@@ -66,32 +69,33 @@ Summary: python3 components for the python-designateclient package.
 Group: Default
 Requires: python3-core
 Provides: pypi(python_designateclient)
-Requires: pypi(cliff)
-Requires: pypi(debtcollector)
-Requires: pypi(jsonschema)
-Requires: pypi(keystoneauth1)
-Requires: pypi(osc_lib)
-Requires: pypi(oslo.serialization)
-Requires: pypi(oslo.utils)
-Requires: pypi(pbr)
-Requires: pypi(requests)
 Requires: pypi(six)
+Requires: pypi(requests)
+Requires: pypi(jsonschema)
+Requires: pypi(oslo.utils)
+Requires: pypi(keystoneauth1)
+Requires: pypi(oslo.serialization)
+Requires: pypi(cliff)
+Requires: pypi(pbr)
+Requires: pypi(debtcollector)
 Requires: pypi(stevedore)
+Requires: pypi(osc_lib)
 
 %description python3
 python3 components for the python-designateclient package.
 
 
 %prep
-%setup -q -n python-designateclient-3.1.0
-cd %{_builddir}/python-designateclient-3.1.0
+%setup -q -n python-designateclient-4.0.0
+cd %{_builddir}/python-designateclient-4.0.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583540683
+export SOURCE_DATE_EPOCH=1586447593
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -104,7 +108,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/python-designateclient
-cp %{_builddir}/python-designateclient-3.1.0/LICENSE %{buildroot}/usr/share/package-licenses/python-designateclient/294b43b2cec9919063be1a3b49e8722648424779
+cp %{_builddir}/python-designateclient-4.0.0/LICENSE %{buildroot}/usr/share/package-licenses/python-designateclient/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
